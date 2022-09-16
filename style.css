@@ -9,13 +9,6 @@ section {
     padding-top: 80px;
 }
 
-footer {
-    background-color: #1d222a;
-    color: #fff;
-    text-align: center;
-    padding: 80px;
-}
-
 /* Section hero, landing page */
 
 .hero {
@@ -25,25 +18,17 @@ footer {
     font-size: 40ox;
 }
 
-.sub-section {
-    display: flex;
-    justify-content: space-around;
-}
-
-.sub-section-projects {
-    display: flex;
-    flex-direction: column;
+footer {
+    background-color: #1d222a;
+    color: #fff;
     text-align: center;
+    padding: 80px;
 }
 
 nav {
     display: flex;
     flex-direction: column-reverse;
-}
-
-.logo {
-    height: 150px;
-    margin-left: 50px;
+    justify-content: space-between;
 }
 
 ul {
@@ -51,24 +36,12 @@ ul {
     list-style-type: none;
     width: 500px;
     justify-content: space-around;
+    font-size: 30px;
 }
 
 li {
     text-decoration: none;
 }
-
-.hero-area {
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero-text {
-    margin-left: 80px;
-    padding-bottom: 200px;
-}
-
 
 h1 {
     font-size: 70px;
@@ -85,6 +58,23 @@ p {
     margin: 0;
     font-size: 30px;
     font-weight: 100;
+}
+
+.subtext {
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px;
+    padding-bottom: 200px;
 }
 
 .button {
@@ -117,6 +107,17 @@ p {
     fill: #dedada;
 }
 
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-section-projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .headshot {
     width: 300px;
     border-radius: 150px;
@@ -127,7 +128,9 @@ p {
     align-items: center;
 }
 
-
+.information {
+    align-self: center;
+}
 
 /* Section about the projects */
 .project-container {
@@ -145,15 +148,22 @@ p {
     padding-bottom: 20px;
 }
 
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+ul.show {
+    display: block;
+}
+
 .project-image {
     margin-top: 25px;
     width: 200px;
     border-radius: 125px;
-}
-
-.subtext {
-    font-size: 15px;
-    padding: 10px 20px;
 }
 
 hr {
@@ -175,8 +185,37 @@ a {
 /* Mobile friendliness */
 
 @media only screen and (max-width: 1000px) {
-    .project-container {
+
+    .project-container,
+    #about {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: block;
+        border: none;
+        background-color: transparent;
+        color: #dedada;
+        font-size: 50px;
+        margin: 20px;
+        align-self: flex-end;
+
+    }
+
+    ul {
+        display: none;
+        background-color: #2a313d;
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2a313d;
+    }
+
+    .hero {
+        padding-top: 0;
     }
 }
