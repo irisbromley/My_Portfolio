@@ -5,12 +5,15 @@ body {
 
 section {
     background-color: #f0f0f0;
-    min-height: 500px;
+    min-height: 800px;
+    padding-top: 40px;
 }
 
 footer {
     background-color: #1d222a;
-    height: 50vh;
+    color: #fff;
+    text-align: center;
+    padding: 80px;
 }
 
 /* Section hero, landing page */
@@ -35,7 +38,7 @@ footer {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
 }
 
 .logo {
@@ -139,6 +142,7 @@ p {
     margin: 10px;
     border: 1px solid #bdbdbd;
     background-color: #fff;
+    padding-bottom: 20px;
 }
 
 .project-image {
@@ -149,9 +153,21 @@ p {
 
 .subtext {
     font-size: 15px;
+    padding: 10px 20px;
 }
 
 hr {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.project-link {
+    text-decoration-line: none;
+    color: #dd7a8b;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }

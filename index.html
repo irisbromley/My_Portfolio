@@ -18,19 +18,17 @@
 <body>
     <section class="hero">
         <nav>
-            <!-- <img src="images/IrisColor.png" alt="image of an Iris flower" class="logo"> -->
-
             <ul>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact me</a></li>
             </ul>
         </nav>
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Iris Bromley</h1>
                 <p>Full Stack Developer</p>
-                <div class="button">My Works </div>
+                <div class="button"><a href="#projects">My Work</a></div>
             </div>
             <div class="socials">
                 <div>
@@ -61,45 +59,49 @@
         </div>
     </section>
 
-    <section class="sub-section-projects">
+    <section class="sub-section-projects" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project-card">
-                <img src="images/projectsImages/3STGSquare.png" alt="Project Image One" class="project-image">
-                <h3>Project One</h3>
-                <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <img src="images/projectsImages/3STGSquare.png" alt="Project Image 3STG5" class="project-image">
+                <h3> 3STG5</h3>
+                <p class="subtext">A property development project I personally was involved in. I wrote this fully
+                    functional site from scratch with no knowledge about coding prior to this.
                 </p>
                 <hr>
-                <p class="subtext">View here</p>
+                <p class="subtext"><a class="project-link" href="https://github.com/irisbromley/dreistaendegasse">View
+                        here</a></p>
             </div>
             <div class="project-card">
-                <img src="images/projectsImages/immoErfolgSquare.png" alt="Project Image Two" class="project-image">
-                <h3>Project Two</h3>
-                <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <img src="images/projectsImages/immoErfolgSquare.png" alt="Project Image immoerfolg"
+                    class="project-image">
+                <h3>ImmoErfolg</h3>
+                <p class="subtext">A website I wrote for a property developer based in Austria.
                 </p>
                 <hr>
-                <p class="subtext">View here</p>
+                <p class="subtext"><a class="project-link" href="https://github.com/irisbromley/immoerfolg">View
+                        here</a></p>
             </div>
             <div class="project-card">
-                <img src="images/projectsImages/YelpCampSquare.png" alt="Project Image Three" class="project-image">
-                <h3>Project Three</h3>
-                <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <img src="images/projectsImages/YelpCampSquare.png" alt="Project Image YelpCamp" class="project-image">
+                <h3>YelpCamp</h3>
+                <p class="subtext">Following the instructions on a Fullstack Developer online bootcamp I made this.
                 </p>
                 <hr>
-                <p class="subtext">View here</p>
+                <p class="subtext"><a class="project-link" href="https://github.com/irisbromley">View here</a></p>
             </div>
             <div class="project-card">
-                <img src="" alt="Project Image Four" class="project-image">
-                <h3>Project Four</h3>
-                <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <img src="images/projectsImages/TomatoSquare.jpg" alt="Project Image PlaceHolder" class="project-image">
+                <h3>Tomatoes</h3>
+                <p class="subtext"> My homegrown tomatoes are a placeholder for a project which is still to be written.
                 </p>
                 <hr>
-                <p class="subtext">View here</p>
+                <p class="subtext"><a class="project-link" href="https://github.com/irisbromley"> Nothing to view here</a></p>
             </div>
         </div>
     </section>
 
-    <section class="sub-section">
+    <section class="sub-section" id="about">
         <div class="information">
             <h2>About me</h2>
             <p>Hi, I am Iris Bromley. <br> I am a Software Developer. </p>
@@ -109,7 +111,10 @@
         </div>
     </section>
 
-    <footer></footer>
+    <footer id="contact">
+        <h3>Contact me</h3>
+        <p>iris.j.bromley@gmail.com</p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
