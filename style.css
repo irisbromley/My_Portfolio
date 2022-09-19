@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 section {
     background-color: #f0f0f0;
     min-height: 800px;
@@ -66,6 +71,7 @@ p {
 }
 
 .hero-area {
+    padding-top: 200px;
     display: flex;
     height: 100%;
     justify-content: space-between;
@@ -74,7 +80,7 @@ p {
 
 .hero-text {
     margin-left: 80px;
-    padding-bottom: 200px;
+
 }
 
 .button {
@@ -96,10 +102,6 @@ p {
 .button:active {
     background-color: #7479db;
     color: #05050d;
-}
-
-.socials {
-    padding-bottom: 200px;
 }
 
 .social {
@@ -184,6 +186,15 @@ a {
 
 /* Mobile friendliness */
 
+@media only screen and (max-width: 1200px) {
+
+    .project-container,
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
 
     .project-container,
@@ -217,5 +228,43 @@ a {
 
     .hero {
         padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-text {
+        margin-left: 0;
+        padding-bottom: 60px;
+    }
+
+    .socials {
+        display: flex;
+    }
+
+    .information {
+        padding-left: 7px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 20px;
     }
 }
